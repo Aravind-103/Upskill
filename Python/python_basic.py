@@ -12,6 +12,7 @@ text = "Python"
 reversed_text = text[::-1]
 print("Reversed string:", reversed_text)
 
+
 # Count repeated characters in a string
 string = "AravindGaddam"
 char_count = {}
@@ -21,3 +22,4 @@ for char in string:
     else:
         char_count[char] = 1
 print("Character count:", char_count)
+print("Character appears often", max(char_count, key=char_count.get))
