@@ -11,3 +11,13 @@ print("Welcome to the world of Data Science and Machine Learning")
 text = "Python"
 reversed_text = text[::-1]
 print("Reversed string:", reversed_text)
+
+# Count repeated characters in a string
+string = "AravindGaddam"
+char_count = {}
+for char in string:
+    if char in char_count:
+        char_count[char] +=1
+    else:
+        char_count[char] = 1
+print("Character count:", char_count)
